@@ -53,3 +53,4 @@ app.listen(PORT, () => {
   console.log(`✅ EduMoz API a correr na porta ${PORT}`);
   console.log(`📊 MEC Moçambique — Sistema de Administração Educacional`);
 });
+app.use('/api/notas', require('./routes/notas'));
