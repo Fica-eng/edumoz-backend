@@ -25,6 +25,7 @@ app.use('/api/provincias',  require('./routes/provincias'));
 app.use('/api/escolas',     require('./routes/escolas'));
 app.use('/api/alunos',      require('./routes/alunos'));
 app.use('/api/professores', require('./routes/professores'));
+app.use('/api/notas',       require('./routes/notas'));
 
 // ── Health check ───────────────────────────────────
 app.get('/', (req, res) => {
@@ -53,4 +54,3 @@ app.listen(PORT, () => {
   console.log(`✅ EduMoz API a correr na porta ${PORT}`);
   console.log(`📊 MEC Moçambique — Sistema de Administração Educacional`);
 });
-app.use('/api/notas', require('./routes/notas'));
